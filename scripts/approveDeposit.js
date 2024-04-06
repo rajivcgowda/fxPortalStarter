@@ -14,7 +14,7 @@ async function main() {
   const [signer] = await ethers.getSigners();
 
   const Penguin_ctr = await ethers.getContractFactory("Penguin");
-  const ctr = await Penguin_ctr .attach('0x2a09B6fF8a15C317c7a8e319c1F1fAf873b08D9F');//example contract address
+  const ctr = await Penguin_ctr .attach('0x2a09B6fF8a15C317c7a8e319c1F1fAf873b08D9F');
 
   const fxRootAddress = '0xF9bc4a80464E48369303196645e876c8C7D972de';
   const fxRoot = await ethers.getContractAt(FXRootContractAbi, fxRootAddress);
