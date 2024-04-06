@@ -8,7 +8,7 @@ async function main() {
   const provider = new ethers.providers.JsonRpcProvider(networkAddress);
   const signer = new ethers.Wallet(privateKey, provider);
 
-  const contractAddress = "0x2a09B6fF8a15C317c7a8e319c1F1fAf873b08D9F";//example contract address
+  const contractAddress = "0x2a09B6fF8a15C317c7a8e319c1F1fAf873b08D9F";
 
   const penguin_ctr = await ethers.getContractFactory("daVinci", signer);
   const ctr = await penguin_ctr.attach(contractAddress);
